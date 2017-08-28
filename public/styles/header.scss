@@ -152,7 +152,7 @@
     background: #171925;
     opacity: 1;
     .section-fullscreen {
-      background-image: url('./../../assets/main-section.png');
+      background-image: url('../images/main-section.png');
       background-attachment: fixed;
       background-size: cover;
       background-color: rgba(23, 25, 37, 0.4);
@@ -212,7 +212,7 @@
   } // ---END OF FULL SCREEN SECTION--- 
   // ---------- SERVICES SECTION ------------
   .section-services {
-    background-image: url('./../../assets/service-section.png');
+    background-image: url('../images/service-section.png');
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -265,7 +265,7 @@
     background: #fff;
     float: left;
     position: relative;
-    background-image: url('./../../assets/about-section.png');
+    background-image: url('../images/about-section.png');
     background-size: cover;
     background-position: center;
     .left {
@@ -365,7 +365,7 @@
   // ---------- EQUIPMENT SECTION ------------
   .cmp-equipment {
     .section-equipment {
-      background-image: url('./../../assets/equipment-section.png');
+      background-image: url('../images/equipment-section.png');
       background-size: cover;
       background-position: bottom;
       width: 100%;
@@ -451,7 +451,7 @@
                 width: 2.5rem;
                 height: 2.5rem;
                 position: absolute;
-                background: url('./../../assets/icon-zoom-in.png');
+                background: url('../images/icon-zoom-in.png');
                 top: calc(50% - 20px);
                 left: calc(50% - 20px);
                 display: none;
@@ -486,18 +486,18 @@
                 height: 18px;
               }
               .arrow-left {
-                background: url('./../../assets/arrow-left-default.png');
+                background: url('../images/arrow-left-default.png');
               }
               .arrow-right {
-                background: url('./../../assets/arrow-right-default.png');
+                background: url('../images/arrow-right-default.png');
               }
               &:hover {
                 cursor: pointer;
                 .arrow-left {
-                  background: url('./../../assets/arrow-left-hover.png');
+                  background: url('../images/arrow-left-hover.png');
                 }
                 .arrow-right {
-                  background: url('./../../assets/arrow-right-hover.png');
+                  background: url('../images/arrow-right-hover.png');
                 }
               }
             }
@@ -566,11 +566,11 @@
       cursor: pointer;
     }
     .arrow-left {
-      background: url('./../../assets/icon-arrow-zoom-left.png');
+      background: url('../images/icon-arrow-zoom-left.png');
       top: calc(50% - 26px);
       left: -15%;
       &:hover {
-        background: url('./../../assets/icon-arrow-zoom-left-hover.png');
+        background: url('../images/icon-arrow-zoom-left-hover.png');
       }
     }
     .arrow-left {
@@ -583,11 +583,11 @@
       }
     }
     .arrow-right {
-      background: url('./../../assets/icon-arrow-zoom-right.png');
+      background: url('../images/icon-arrow-zoom-right.png');
       top: calc(50% - 26px);
       right: -15%;
       &:hover {
-        background: url('./../../assets/icon-arrow-zoom-right-hover.png');
+        background: url('../images/icon-arrow-zoom-right-hover.png');
       }
     }
     .arrow-right {
@@ -615,12 +615,12 @@
     .close {
       width: 40px;
       height: 40px;
-      background-image: url('./../../assets/icon-close.png');
+      background-image: url('../images/icon-close.png');
       position: absolute;
       right: 15px;
       top: 15px;
       &:hover {
-        background-image: url('./../../assets/icon-close-hover.png');
+        background-image: url('../images/icon-close-hover.png');
       }
     }
     .img-fluid {
@@ -644,7 +644,7 @@
   // ---------- CLIENTS SECTION ------------
   .cmp-clients {
     .section-clients {
-      background-image: url('./../../assets/clients-section.png');
+      background-image: url('../images/clients-section.png');
       background-size: cover;
       background-position: bottom;
       width: 100%;
@@ -698,7 +698,7 @@
   // ---------- CONTACT SECTION ------------
   .cmp-contact {
     .section-contact {
-      background-image: url('./../../assets/contact-us-section.png');
+      background-image: url('../images/contact-us-section.png');
       background-size: cover;
       background-position-x: 73.5%;
       width: 100%;
@@ -836,7 +836,7 @@
           .logo-footer {
             width: 170px;
             height: 25px;
-            background-image: url('./../../assets/logo-footer.png');
+            background-image: url('../images/logo-footer.png');
             margin-bottom: 0.5rem;
           }
           .rights {
@@ -877,23 +877,23 @@
             height: 24px;
           }
           .facebook {
-            background-image: url('./../../assets/facebook.png');
+            background-image: url('../images/facebook.png');
             &:hover {
-              background-image: url('./../../assets/facebook-hover.png');
+              background-image: url('../images/facebook-hover.png');
             }
           }
           .instagram {
-            background-image: url('./../../assets/instagram.png');
+            background-image: url('../images/instagram.png');
             &:hover {
-              background-image: url('./../../assets/instagram-hover.png');
+              background-image: url('../images/instagram-hover.png');
             }
           }
           .youtube {
             width: 20px;
             height: 24px;
-            background-image: url('./../../assets/youtube.png');
+            background-image: url('../images/youtube.png');
             &:hover {
-              background-image: url('./../../assets/youtube-hover.png');
+              background-image: url('../images/youtube-hover.png');
             }
           }
         }

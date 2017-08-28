@@ -1,16 +1,26 @@
-var express = require('express');
-var app = express();
-var path = require("path");
+var express = require('express'),
+    app = express(),
+    compileSass = require('express-compile-sass'),
+    path = require("path"),
+    root = process.cwd();
 
-// This responds with "Hello World" on the homepage
 app.get('/', function (req, res) {
-   console.log("Got a GET request for the homepage");
-   res.sendFile(path.join(__dirname+'/views/index.html'));
+    res.render('index');
 });
 
-app.use("/public", express.static(path.join(__dirname, 'public')));
+app.use(compileSass({
+    root: root + '/public',
+    sourceMap: true, // Includes Base64 encoded source maps in output css 
+    sourceComments: true, // Includes source comments in output css 
+    watchFiles: true, // Watches sass files and updates mtime on main files for each change 
+    logToConsole: false // If true, will log to console.error on errors 
+}));
+
+app.use(express.static('public'));
+
+app.set("view engine", "jade");
 
 var server = app.listen(8081, function () {
-   console.log("Example app listening at http://localhost:8081/")
+    console.log("Example app listening at http://localhost:8081/")
 });
 
