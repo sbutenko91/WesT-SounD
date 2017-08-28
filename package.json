@@ -7,6 +7,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap4-jade": "^1.0.0-dev",
     "express": "^4.15.4",
     "express-compile-sass": "^3.0.4",
     "jade": "^1.11.0",
