@@ -1,5 +1,181 @@
 extends ./layout
 
 block content  
-  h1 Posts
-  p Here's a list of all blog postsd
+  .wrapper-page
+    a.scrollToTop(href="#") вгору
+    section.cmp-main.mask
+      .section-fullscreen.container#top
+      .container.text-center.main-text
+        h3.tagline гучне втілення
+        h3.tagline яскравих ідей
+
+    section.cmp-services
+      .section-services.container#service
+        .service-content
+          .row
+            .col-12
+              h1.text-center.title послуги
+              p.text-default.text-center West-sound - повне технічне забезпечення вашого заходу. 
+                br 
+                | Ми потурбуємось усіма аспектами вашого шоу.
+              .gradient-line
+          .row.wrapper-services
+            .col-xs-12.col-sm-6.col-lg-3
+              img.img-circle(src="images/sound.png")
+              p.item звук
+              p.text-default Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.
+            .col-xs-12.col-sm-6.col-lg-3
+              img.img-circle(src="images/light.png")
+              p.item світло
+              p.text-default Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.
+            .col-xs-12.col-sm-6.col-lg-3
+              img.img-circle(src="images/scene.png")
+              p.item сцена
+              p.text-default Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.
+            .col-xs-12.col-sm-6.col-lg-3
+              img.img-circle(src="images/screen.png")
+              p.item екрани
+              p.text-default Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.
+    
+    section.cmp-about-us
+      .section-about.container#aboutus
+        .row
+          .col-12.col-sm-6.left
+            .wrapper-about
+              .layout
+                h1.title про нас
+                p.text-about Компанія "Вест Саунд" почала свою діяльність у 1999 році. На сьогоднішній день, ми є однією з провідних компаній у Захiдному регіоні України в сфері технічного забезпечення культурно масових заходів (сцена, звук, світло), концертів, акцій тощо. Пропонуємо звук, світло, сцену різних конфігурацій.
+                h2.list-services до ваших послуг
+                .text-about.rental
+                  ul
+                    li Оренда сцени
+                    li Оренда свуку
+                    li Оренда світла
+                    li Інсталяція обладнання
+                    li Виготовлення професійної тари RACK
+                    li Конструювання і виробництво акустичних систем під замовлення
+    
+    section.cmp-equipment
+      .section-equipment.container#equipment
+        .equipment-content
+          .row
+            .col-12
+              h1.text-center.title обладнання
+              .gradient-line
+          .row.wrapper-equipment
+            .col-xs-12.col-md-4.block
+              .h3.item-equipment світло
+              hr
+              .row
+                .col-6
+                  p.text-default l’acoustics
+                  p.text-default mag audio
+                  p.text-default shure
+                  p.text-default sennheiser
+                  p.text-default fender
+                  p.text-default ampeg
+                  p.text-default DW
+                  p.text-default Tama
+                .col-6
+                  p.text-default Yamaha
+                  p.text-default Allen&health
+                  p.text-default mesa boogie
+                  p.text-default powersoft
+                  p.text-default qsc
+                  p.text-default obe
+                  p.text-default dbx
+                  p.text-default tc electronic
+            .col-xs-12.col-md-4.block
+              .h3.item-equipment звук
+              hr
+              .row
+                .col-6
+                  p.text-default beam head
+                  p.text-default spot head
+                  p.text-default wash head
+                  p.text-default beam-spot head
+                  p.text-default led par
+                  p.text-default lamp par
+                  p.text-default follow spot
+                  p.text-default blinder light
+                .col-6
+                  p.text-default strobe light
+                  p.text-default martin lighting
+                  p.text-default chamsys lighting
+                  p.text-default dmx
+                  p.text-default uplighting
+                  p.text-default static & dynamic lights
+            .col-xs-12.col-md-4.block
+              .h3.item-equipment сцена
+              hr
+              .row
+                .col-6
+                  p.text-default сценічні конструкції
+                  p.text-default подіуми
+                  p.text-default Layher
+                  p.text-default ліфтова сцена
+                  p.text-default збірна фермова сцена
+                  p.text-default конструкції для підвісу
+                  p.text-default звуку та світла
+                  p.text-default послуги  рігерів
+                .col-6
+                  p.text-default конструкції під екран
+
+    section.cmp-gallery
+      .section-gallery.container#gallery
+        .gallery-content
+          .row
+            .col-12
+              h1.text-center.title фото
+          .row.wrapper-gallery
+            //- - for (var x = 0; x < 18; x++)
+            //-   .col-6.col-md-2.photo
+            //-     .mask(onclick="showModal()")
+            //-       img.img-fluid(src="images/photo1.png")
+            //-       .zoom
+            
+            script(src="//lightwidget.com/widgets/lightwidget.js")
+            iframe(src="//lightwidget.com/widgets/49a8387475805a49bd7a64e9b6b3a6c9.html", scrolling="no", allowtransparency="true", class="lightwidget-widget", style="width: 100%; height: 590px; border: 0; max-width: 1200px; margin: 0 auto; overflow: auto")
+            button.btn.btn-primary.more більше фото
+    
+    .modal#imageModal(onclick="closeModal()")
+      .modal-opacity
+      .wrapper-modal
+        .modal-content
+          .arrow.arrow-left
+          .close(onclick="closeModal()")
+          img.img-fluid(src="images/photo-full.jpg")
+          .arrow.arrow-right
+
+    section.cmp-clients
+      .section-clients.container#clients
+        .clients-content
+          .row
+            .col-12
+              h1.text-center.title наші клієнти
+              .gradient-line
+          .row.wrapper-clients
+            - for (var i = 1; i < 25; i++)
+              .col-4.col-md-2.item
+                .client-block
+                  img.img-fluid(src="images/" + i + ".jpg")
+    section.cmp-contact
+      .section-contact.container#contact
+        .contact-content
+          .row
+            .col-12.col-sm-6.form
+              h1 напишіть нам
+              form
+                .form-group
+                  label(for="name") Ім'я
+                  input.form-control#name(type="text", aria-describedby="name", placeholder="введіть ім'я")
+                .form-group
+                  label(for="email") E-mail
+                  input.form-control#email(type="text", aria-describedby="email", placeholder="введіть email")      
+                .form-group
+                  label(for="phoneNumber") Телефон
+                  input.form-control#phoneNumber(type="number", aria-describedby="phoneNumber", placeholder="введіть телефон")
+                .form-group
+                  label(for="exampleTextarea") Повідомлення
+                  textarea.form-control#exampleTextarea(rows="4", maxlength="600")
+                button.btn.btn-primary.sent(type="submit") відправити
