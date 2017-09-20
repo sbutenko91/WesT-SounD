@@ -1,0 +1,23 @@
+extends ./layout2
+
+block content
+    .wrapper-page.wrapper-page-services
+        .wrapper.container-fluid
+            .row-fluid
+                h1.text-center.title послуги
+                .gradient-line
+                p.text-center.head Пропонуємо різноманітні види послуг: як монтаж сцени, оренда сцени, оренда звуку та світлового обладнання, забезпечення світловими ефектами, встановлення якісною звуку, та різного роду обладнання.
+            .row.wrapper-services
+                a.col-xs-12.col-sm-6.col-lg-3(onclick="navigateToSound()")
+                    img.img-circle(src="images/sound.png", alt="Звук")
+                    .item звук
+                a.col-xs-12.col-sm-6.col-lg-3(onclick="navigateToLight()")
+                    img.img-circle(src="images/light.png", alt="Світло")
+                    .item світло
+                a.col-xs-12.col-sm-6.col-lg-3(onclick="navigateToScene()")
+                    img.img-circle(src="images/scene.png", alt="Сцена")
+                    .item сцена
+                a.col-xs-12.col-sm-6.col-lg-3(onclick="navigateToLed()")
+                    img.img-circle(src="images/screen.png", alt="Екрани")
+                    .item екрани
+                

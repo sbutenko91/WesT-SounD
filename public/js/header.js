@@ -23,14 +23,25 @@ $(document).ready(function(){
 		} else {
 			$('.scrollToTop').css('display', 'none');
 		}
+    });
+    $(window).scroll(function(){
+		if ($(this).scrollTop() > 1000) {
+			$('.container.text-center.main-text').css('display', 'none');
+		} else {
+			$('.container.text-center.main-text').css('display', 'block');
+		}
 	});
 	
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
-	});
-	
+    });
+    
+    $('.logoScroll').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+    });
 });
 
 $(document).ready(function(){
@@ -126,3 +137,7 @@ $(document).ready(function () {
         }
     });
 })
+
+function navigateToHome() {
+    window.location.href = '/'
+}

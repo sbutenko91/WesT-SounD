@@ -1,0 +1,41 @@
+extends ./layout2
+
+block content
+    .wrapper-page.wrapper-page-stageConstruction
+        .wrapper.container-fluid
+            .row-fluid
+                h1.text-center.title 
+                    | Сценічні конструкції
+                    br
+                    span
+                        |  Сцена Звук Світло
+                .gradient-line
+                h2.head.text-center Конструкції для підвісу звукового і світлового обладнання
+                p.text-default.text-center Пропонуємо різноманітні сценічні конструкції, які представлені великим парком високотехнологічного обладнання німецької компанії «Layher». Це обладнання чудово зарекомендувало себе при постановці таких об'єктів, як крита сцена, дахи різних конфігурацій, системи підвісу для світлового та звукового обладнання. Характерною особливістю сценічних конструкцій на базі цих систем є здатність нести великі статичні і динамічні навантаження, їх сумісність, висока швидкість збирання і тривала зносостійкість.
+            .row.popup
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction1.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction2.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction3.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction4.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction5.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction6.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction7.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction8.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/stageConstruction9.jpg")
+            div.showPopup
+                .overlay
+                .img-show
+                    span
+                        .close-icon
+                    img(src="")
+            .row-fluid
+                button.btn.btn-default(onclick="goBack()") Повернутись

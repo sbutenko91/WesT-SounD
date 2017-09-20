@@ -1,0 +1,38 @@
+extends ./layout2
+
+block content
+    .wrapper-page.wrapper-page-screenConstruction
+        .wrapper.container-fluid
+            .row-fluid
+                h1.text-center.title 
+                    | Конструкції під екрани
+                    br
+                    span
+                        |  Сцена Звук Світло
+                .gradient-line
+                h2.head.text-center Оренда сцени. Конструкції під екрани
+            .row.popup
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/construction1.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/construction2.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/construction3.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/construction4.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/construction5.jpg")
+            div.showPopup
+                .overlay
+                .img-show
+                    span
+                        .close-icon
+                    img(src="")
+            p.text-default 
+                    | за більш детальною інформацією звертайтесь 
+                    span(style="color: violet; font-size: 1.5rem;") 0672756545 
+                    |або 
+                    a.link.contactlink(href="/#contact") Наші контакти
+            .row-fluid
+                button.btn.btn-default(onclick="goBack()") Повернутись
+

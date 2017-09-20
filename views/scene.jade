@@ -1,0 +1,28 @@
+extends ./layout2
+
+block content
+    .wrapper-page.wrapper-page-scene
+        .wrapper.container-fluid
+            .row-fluid
+                h1.text-center.title Технічне забезпечення концертів
+                .gradient-line
+                h2.head Перелік сцен:
+                p.text-default
+                    | Компанія «West Sound» пропонує професійні послуги надання в оренду сценічних конструкцій німецької фірми 
+                    a.link(href="http://www.layher.com/") «Layher»
+                    | :
+                p.text-default Наші можливості дозволяють вам без обмежень проводити різноманітні масові заходи, які будуть відповідати вашим потребам і можливостям.
+                h3
+                    a.link(title="Оренда сцени -- Сцена Звук Світло", onclick="navigateToStageRent()", href="/51.html") Оренда сцени -- Сцена Звук Світло
+                h3
+                    a.link(title="Оренда подіумів -- Сцена Звук Світло", onclick="navigateToPodiumRent()", href="/52.html") Оренда подіумів -- Сцена Звук Світло
+                h3
+                    a.link(title="Конструкції під екрани -- Сцена Звук Світло", onclick="navigateToScreens()", href="/53.html") Конструкції під екрани -- Сцена Звук Світло
+                h3
+                    a.link(title="Сценічні конструкції -- Сцена Звук Світло", onclick="navigateStageConstruction()", href="/54.html") Сценічні конструкції -- Сцена Звук Світло
+                h3
+                    a.link(title="Концертні огорожі ( турнікети ) -- Сцена Звук Світло", onclick="navigateToTurnstile()", href="/55.html") Концертні огорожі ( турнікети ) -- Сцена Звук Світло 
+                h3
+                    a.link(title="Світлодіодні екрани -- Сцена Звук Світло", onclick="navigateToLed()", href="/svitlodiodni_ekrany") Світлодіодні екрани -- Сцена Звук Світло
+            .row-fluid
+                button.btn.btn-default(onclick="goBack()") Повернутись

@@ -1,0 +1,33 @@
+extends ./layout2
+
+block content
+    .wrapper-page.wrapper-page-turnstile
+        .wrapper.container-fluid
+            .row-fluid
+                h1.text-center.title 
+                    | Концертні огорожі (турнікети) 
+                    br
+                    span
+                        |  Сцена Звук Світло
+                .gradient-line
+                h2.head.text-center Конструкції для підвісу звукового і світлового обладнання
+                p.text-default.text-center Турнікети або концертні огорожі - дуже ефективний і перевірений засіб забезпечення безпеки при проведенні заходів з великою кількістю людей. Турнікети(концертні огорожі) дозволяють убезпечити обладнання і комфорт артистів при мінімізації фізичної сили служб безпеки. Концертні огорожі(турнікети) можуть бути використані для створення коридорів і розмежування простору. Залежно від призначення турнікети можна виконувати мобільними, тобто такими, щоб була можливість тимчасового встановлення у потрібному місці. Окремі секції такої концертної огорожі можна з'єднувати або роз'єднувати при потребі. Пропонуєм до Ваших послуг технічне забезпечення турнікетів до 100 м.
+            .row.popup
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/turnstile1.gif")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/turnstile2.gif")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/turnstile3.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/turnstile4.jpg")
+                .col-12.col-md-4.image
+                    img.img-fluid(src="images/turnstile5.jpg")
+            div.showPopup
+                .overlay
+                .img-show
+                    span
+                        .close-icon
+                    img(src="")
+            .row-fluid
+                button.btn.btn-default(onclick="goBack()") Повернутись
