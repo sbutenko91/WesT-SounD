@@ -4,6 +4,11 @@ var express = require('express'),
     path = require("path"),
     root = process.cwd();
 
+var expressGoogleAnalytics = require('express-google-analytics');
+var analytics = expressGoogleAnalytics('UA-637057-17');
+
+app.use(analytics);
+
 app.get('/', function (req, res) {
     res.render('index');
 });

@@ -1,3 +1,4 @@
+//---------------------- global wrapper styles -----------------------
 .wrapper-page {
     background-image: url('../images/service-section.png');
     background-size: cover;
@@ -63,8 +64,7 @@
     }
 }
 
-//-----------------custom styles for slider---------------------
-
+//----------------- custom styles for image slider ---------------------
 .wrapper-page-discoEquipment,
 .wrapper-page-concertEquipment,
 .wrapper-page-laser,
@@ -79,19 +79,19 @@
         img {
             width: 100%;
             max-width: 100%;
-            height: 100%; //max-height: 353px;
+            height: 100%;
         }
     }
 }
 
+//----------------------- disco equipment page ----------------------------
 .wrapper-page-discoEquipment {
     .slide {
         width: 300px !important;
     }
 }
 
-//----------------custom style for scene page-----------------------
-
+//---------------- custom style for scene page -----------------------
 .wrapper-page-scene {
     h3 {
         width: 100%;
@@ -118,26 +118,28 @@
     }
 }
 
-.gallery-page{
-     background: #fff;
-     .title{
-         color: #424a57 !important;
-     }
+//----------------------------- gallery ------------------------------
+.gallery-page {
+    background: #fff;
+    .title {
+        color: #424a57 !important;
+    }
     .container-fluid,
     .row-fluid,
     .section-gallery,
-    .wrapper-gallery{
+    .wrapper-gallery {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    .wrapper-gallery{
+    .wrapper-gallery {
         margin: 0;
     }
-    .img-fluid{
+    .img-fluid {
         cursor: pointer !important;
     }
 }
 
+//----------------------- wrapper container 1200px -- global styles ----------------------
 .wrapper {
     width: 100%;
     max-width: 1200px;
@@ -220,6 +222,7 @@
     }
 }
 
+//------------------------ custom styles for pages --------------------------
 .wrapper-page-podiumRent,
 .wrapper-page-stageConstruction,
 .wrapper-page-turnstile {
@@ -229,6 +232,7 @@
     }
 }
 
+//-------------------------- popup styles ---------------------------------
 .wrapper-page-screenConstruction,
 .wrapper-page-stageConstruction,
 .wrapper-page-turnstile {
@@ -281,7 +285,7 @@
     }
 }
 
-// ------------------- TABLE STYLE --------------------
+// ------------------- table styles --------------------
 .table-striped {
     margin-top: 1rem;
     thead {
@@ -318,6 +322,7 @@
     }
 }
 
+//------------------- button for back navigation ---------------------
 .btn-default {
     border-top-left-radius: 2rem !important;
     border-bottom-left-radius: 2rem !important;
@@ -329,11 +334,8 @@
     }
 }
 
+//--------------- global styles for buttons on focus ----------------
 button:focus {
     outline: none !important;
     box-shadow: none !important;
-}
-
-.alert{
-    display: none;
 }

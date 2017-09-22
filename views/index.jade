@@ -1,8 +1,13 @@
 extends ./layout
 
+block vars
+  - var keywords = 'сцена звук світло, оренда сцени, монтаж сцени, забезпечення світловими ефектами, встановлення звуку, подіуми різних розмірів, подіуми, сцени різних розмірів, оренда світла, ореда звуку, озвучення, освітлення, побудова сцени, технічне забезпечення концертних заходів, технічне забезпечення концертів, технічне забезпечення масових заходів.'
+  - var description = 'Сцена звук світло. Технічне забезпечення концертних заходів, забезпечення світловими ефектами, встановлення звуку. Озвучення концерту, банкету, весілля чи іншого заходу, професійне освітлення сцени, площадки, чи танцювального майданчика, оренда сцени, монтаж сцени, подіуму, і т.д.'
+  - var title = 'Вест Саунд - Сцена Звук Світло'
+
 block content  
   .wrapper-page
-    a.callButton(href="tel:0672756545")
+    a.callButton.desktop-hide(href="tel:0672756545")
       .call-icon
     a.scrollToTop(href="#") вгору
     section.cmp-main.mask
@@ -16,7 +21,7 @@ block content
         .service-content
           .row
             .col-12
-              h1.text-center.title послуги
+              h3.text-center.title послуги
               p.text-default.text-center West-sound - повне технічне забезпечення вашого заходу. 
                 br 
                 | Ми потурбуємось усіма аспектами вашого шоу.
@@ -24,19 +29,19 @@ block content
           .row.wrapper-services
             .col-xs-12.col-sm-6.col-lg-3(onclick="navigateToSound()")
               img.img-circle(src="images/sound.png")
-              p.item звук
+              h2.item звук
               p.text-default Компанія West Sound пропонує послуги професійного звукозабезпечення будь-яких масштабів. Будь ласка, зв'яжіться з нами, щоб отримати інформацію щодо Вашого проекту сьогодні.
             .col-xs-12.col-sm-6.col-lg-3(onclick="navigateToLight()")
               img.img-circle(src="images/light.png")
-              p.item світло
+              h2.item світло
               p.text-default Компанія West Sound пропонує професійне світлове обладнання, що створить неповторну атмосферу Вашого заходу. Зв'яжіться з нами сьогодні, щоб ми розробили пропозицію якомога скоріше.
             .col-xs-12.col-sm-6.col-lg-3(onclick="navigateToScene()")
               img.img-circle(src="images/scene.png")
-              p.item сцена
+              h2.item сцена
               p.text-default Компанія West Sound побудує будь-яку сценічну конструкцію в будь-якому місці. Зверніться до нас щоб отримати інформацію про оптимальний тип та розмір конструктиву для Вашого проекту.
             .col-xs-12.col-sm-6.col-lg-3(onclick="navigateToLed()")
               img.img-circle(src="images/screen.png")
-              p.item екрани
+              h2.item екрани
               p.text-default West Sound, разом з компанією WiZiO готові забезпечити екрани будь-якого розміру та форми. В нашому розпорядженні найбільший парк візуального обладнання на західній Україні. Зв'яжіться з нами, щоб дізнатись деталі.
     
     section.cmp-about-us
@@ -45,28 +50,34 @@ block content
           .col-12.col-sm-6.left
             .wrapper-about
               .layout
-                h1.title про нас
+                h3.title про нас
                 p.text-about Компанія "Вест Саунд" почала свою діяльність у 1999 році. На сьогоднішній день, ми є однією з провідних компаній у Захiдному регіоні України в сфері технічного забезпечення культурно масових заходів (сцена, звук, світло), концертів, акцій тощо. Пропонуємо звук, світло, сцену різних конфігурацій.
                 h2.list-services до ваших послуг
                 .text-about.rental
                   ul
-                    li Оренда сцени
-                    li Оренда свуку
-                    li Оренда світла
-                    li Інсталяція обладнання
-                    li Виготовлення професійної тари RACK
-                    li Конструювання і виробництво акустичних систем під замовлення
+                    li
+                      h2 Оренда сцени
+                    li
+                      h2 Оренда свуку
+                    li
+                      h2 Оренда світла
+                    li
+                      h2 Інсталяція обладнання
+                    li
+                      h2 Виготовлення професійної тари RACK
+                    li 
+                      h2 Конструювання і виробництво акустичних систем під замовлення
     
     section.cmp-equipment
       .section-equipment.container#equipment
         .equipment-content
           .row
             .col-12
-              h1.text-center.title обладнання
+              h3.text-center.title обладнання
               .gradient-line
           .row.wrapper-equipment
             .col-xs-12.col-md-4.block
-              .h3.item-equipment світло
+              h2.item-equipment світло
               hr
               .row
                 .col-6
@@ -88,7 +99,7 @@ block content
                   p.text-default dbx
                   p.text-default tc electronic
             .col-xs-12.col-md-4.block
-              .h3.item-equipment звук
+              h2.item-equipment звук
               hr
               .row
                 .col-6
@@ -108,7 +119,7 @@ block content
                   p.text-default uplighting
                   p.text-default static & dynamic lights
             .col-xs-12.col-md-4.block
-              .h3.item-equipment сцена
+              h2.item-equipment сцена
               hr
               .row
                 .col-6
@@ -128,7 +139,7 @@ block content
         .gallery-content
           .row
             .col-12
-              h1.text-center.title фото
+              h3.text-center.title фото
           #instafeed.row.gallery.wrapper-gallery
             
           button(class="btn btn-primary more", onclick="navigateToGallery()") більше фото
@@ -138,7 +149,7 @@ block content
         .clients-content
           .row
             .col-12
-              h1.text-center.title наші клієнти
+              h3.text-center.title наші клієнти
               .gradient-line
           .row.wrapper-clients
             - for (var i = 1; i < 25; i++)
@@ -150,7 +161,7 @@ block content
         .contact-content
           .row
             .col-12.col-sm-6.form
-              h1 напишіть нам
+              h3 напишіть нам
               form
                 .form-group
                   label(for="name") Ім'я

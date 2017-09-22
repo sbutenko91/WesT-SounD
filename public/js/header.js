@@ -18,10 +18,12 @@ function toggleHeaderNavBar() {
 $(document).ready(function(){
 	//Check to see if the window is top if not then display button
 	$(window).scroll(function(){
-		if ($(this).scrollTop() > 400) {
+		if ($(this).scrollTop() > 550) {
 			$('.scrollToTop').css('display', 'block');
+			$('.callButton').css('display', 'block');
 		} else {
 			$('.scrollToTop').css('display', 'none');
+			$('.callButton').css('display', 'none');
 		}
     });
     $(window).scroll(function(){
@@ -30,7 +32,8 @@ $(document).ready(function(){
 		} else {
 			$('.container.text-center.main-text').css('display', 'block');
 		}
-	});
+    });
+        
 	
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){

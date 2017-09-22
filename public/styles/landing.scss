@@ -64,6 +64,11 @@
   }
   .social {
     width: 8.875rem;
+    a{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     &:hover {
       border-bottom: none !important;
       padding-bottom: 0.25rem;
@@ -123,36 +128,33 @@
   background: #202427 !important;
 }
 
-// header style for mobile view
+// ---------- header style for mobile view ------------
 @media(max-width: 991px) {
   .show {
     height: auto;
     background: none;
-    transition: background 0s ease-out; //transition: background 1s ease-out;
-    .menuMobile {
-      margin-top: 1.5rem;
-      .nav-link {
-        color: #e9ebf4 !important;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: 'SourceSansPro-Semibold';
-        &:hover {
-          color: #fff;
-          border-bottom: none;
-          padding-bottom: 0.5rem;
-        }
-      }
-      &:hover {
-        color: violet !important;
-      }
-      .active {
-        border-radius: 1.25rem;
-        border: 1px solid violet;
-      }
-      .social {
-        margin-left: 0 !important;
-      }
+    transition: background 0s ease-out;
+  }
+  .nav-link {
+    color: #e9ebf4 !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'SourceSansPro-Semibold';
+    &:hover {
+      color: #fff;
+      border-bottom: none;
+      padding-bottom: 0.5rem;
     }
+  }
+  &:hover {
+    color: violet !important;
+  }
+  .active {
+    border-radius: 1.25rem;
+    border: 1px solid violet;
+  }
+  .social {
+    margin-left: 0 !important;
   }
 }
 
@@ -183,6 +185,7 @@
   padding: 0;
 }
 
+//---------FIXED BUTTON FOR SCROLLING TO TOP PAGE-----------
 .scrollToTop {
   width: 50px;
   height: 60px;
@@ -206,20 +209,22 @@
   }
 }
 
+//--------------------FIXED CALL BUTTON---------------------
 .callButton {
   width: 50px;
   height: 50px;
   padding: 5px;
   border-radius: 50%;
-  background: #fff;
+  background: transparent;
   position: fixed;
   right: 20px;
   bottom: 90px;
   z-index: 1000;
+  display: none;
   .call-icon {
     width: 40px;
     height: 40px;
-    background: url('../images/call-button.png');
+    background: url('../images/call-icon.png');
     -webkit-transition: -webkit-transform 1.6s ease-in-out;
     transition: transform 1.6s ease-in-out;
     &:hover:hover {
@@ -227,10 +232,9 @@
       transform: rotate(720deg);
     }
   }
-  @media(min-width: 992px) {
-    display: none;
-  }
-} // ---------- FULL SCREEN SECTION ------------
+}
+
+// ---------- FULL SCREEN SECTION ------------
 .mask {
   background: #171925;
   opacity: 1;
@@ -261,6 +265,9 @@
     }
     @media(max-width: 675px) {
       top: 50%;
+    }
+    .tagline:hover {
+      color: #fff !important;
     }
     .tagline {
       text-shadow: -8px -6px 1px rgba(33, 150, 243, 0.5);
@@ -405,6 +412,10 @@
         .rental {
           padding-left: 45px;
           line-height: 2rem;
+          h2{
+            font-size: 14px;
+            line-height: 2rem;
+          }
         }
         .list-services {
           width: 100%;
@@ -518,7 +529,7 @@
       margin-left: auto;
       margin-right: auto;
       .gallery {
-        a{
+        a {
           display: block;
           position: relative;
           top: 50%;
@@ -734,7 +745,7 @@
           padding: 24px 10px;
           border-radius: 0;
         }
-        h1 {
+        h3 {
           width: 100%;
           font-size: 2rem;
           font-family: 'SourceSansPro-Bold';
@@ -925,7 +936,7 @@ body {
   width: 100%;
   height: 100%;
 }
-
+//---------------------GLOBAL STYLES------------------
 .wrapper-page {
   .title {
     margin-bottom: 1.5rem;
@@ -969,7 +980,7 @@ iframe {
   }
 }
 
-// modal instafeed
+// ------------------MODAL INSTAFEED/MAGNIFIC----------------
 .mfp-container {
   padding: 15px !important;
   .mfp-content {
@@ -1049,11 +1060,13 @@ iframe {
     display: none !important;
   }
 }
-
+//-------GLOBAL STYLE FOR BUTTONS ON FOCUS---------
 button:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
+//---------------------GALLERY SECTION---------------
 
 .gallery-page {
   .gallery {
@@ -1062,13 +1075,13 @@ button:focus {
     &:focus {
       outline: transparent auto 5px !important;
     }
-    a{
+    a {
       display: block;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
       cursor: pointer;
-      &:focus{
+      &:focus {
         outline: none;
       }
     }
@@ -1102,4 +1115,16 @@ button:focus {
       }
     }
   }
+}
+
+//----------------- PRELOADING PAGE GIF ------------------
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../images/286.gif') 50% 50% no-repeat #fff;
 }
