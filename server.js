@@ -5,6 +5,8 @@ var express = require('express'),
     root = process.cwd();
 
 var expressGoogleAnalytics = require('express-google-analytics');
+var mailService = require('services/email.service');
+
 var analytics = expressGoogleAnalytics('UA-637057-17');
 
 app.use(analytics);
@@ -62,6 +64,9 @@ app.get('/77.html', function (req, res) {
 });
 app.get('/78.html', function (req, res) {
     res.render('laser');
+});
+app.post('/mail', function (req, res) {
+    mailService.sendEmail(req);
 });
 app.use(compileSass({
     root: root + '/public',
