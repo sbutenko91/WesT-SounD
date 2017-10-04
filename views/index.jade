@@ -162,7 +162,7 @@ block content
           .row
             .col-12.col-sm-6.form
               h3 напишіть нам
-              form
+              form#contact-form
                 .form-group
                   label(for="name") Ім'я
                   input.form-control#name(type="text", aria-describedby="name", placeholder="введіть ім'я", required)
@@ -173,6 +173,6 @@ block content
                   label(for="phoneNumber") Телефон
                   input.form-control#phoneNumber(type="number", aria-describedby="phoneNumber", placeholder="введіть телефон", required)
                 .form-group
-                  label(for="exampleTextarea") Повідомлення
-                  textarea.form-control#exampleTextarea(rows="4", maxlength="600")
+                  label(for="message") Повідомлення
+                  textarea.form-control#message(rows="4", maxlength="600")
                 button.btn.btn-primary.sent#btnsend(type="submit") відправити

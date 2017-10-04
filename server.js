@@ -5,7 +5,7 @@ var express = require('express'),
     root = process.cwd();
 
 var expressGoogleAnalytics = require('express-google-analytics');
-var mailService = require('services/email.service');
+var mailService = require('./services/email.service');
 
 var analytics = expressGoogleAnalytics('UA-637057-17');
 
