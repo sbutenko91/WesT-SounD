@@ -10,5 +10,13 @@ $("#btnsend").on('click', () => {
         phoneNumber: phoneNumber,
         message: message
     }
-    console.log(mail.email);
+
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:8081/mail',
+        data: JSON.stringify(mail),
+        success: function(data) { alert("HUJ"); },
+        contentType: "application/json",
+        dataType: 'json'
+    });
 });

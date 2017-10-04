@@ -6,10 +6,17 @@ var express = require('express'),
 
 var expressGoogleAnalytics = require('express-google-analytics');
 var mailService = require('./services/email.service');
+var bodyParser = require('body-parser')
 
 var analytics = expressGoogleAnalytics('UA-637057-17');
 
+var jsonParser = bodyParser.json()
+
 app.use(analytics);
+
+app.use(bodyParser.json());
+
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
     res.render('index');
@@ -66,8 +73,10 @@ app.get('/78.html', function (req, res) {
     res.render('laser');
 });
 app.post('/mail', function (req, res) {
-    mailService.sendEmail(req);
+    mailService.sendEmail(req.body);
+    res.sendStatus(200);
 });
+
 app.use(compileSass({
     root: root + '/public',
     sourceMap: true, // Includes Base64 encoded source maps in output css 
@@ -77,6 +86,7 @@ app.use(compileSass({
 }));
 
 app.use(express.static('public'));
+
 
 app.set("view engine", "jade");
 
