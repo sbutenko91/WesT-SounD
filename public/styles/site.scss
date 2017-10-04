@@ -296,8 +296,11 @@
             text-transform: uppercase;
             background: #4267b2;
         }
+        th{
+            vertical-align: middle !important;
+        }
         th:last-child {
-            width: 200px;
+            width: 80px;
         }
     }
     tbody {
@@ -308,8 +311,11 @@
         tr:nth-of-type(odd) {
             background: #2d2a31 !important;
         }
+        td{
+        vertical-align: middle;
+        }
         td:last-child {
-            width: 200px;
+            width: 80px;
         }
     }
 }
