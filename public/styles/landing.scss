@@ -124,12 +124,24 @@
   }
 }
 
+.navbar-light {
+  .navbar-toggler-icon{
+    background-image: url('../images/icon-menu-toggle.png') !important;
+  }
+  .navbar-toggler-right{
+    border-color: transparent !important;
+  }
+}
+
 .show {
   background: #202427 !important;
 }
 
 // ---------- header style for mobile view ------------
 @media(max-width: 991px) {
+  .nav-item:nth-child(2){
+    margin-top: 1rem;
+  }
   .show {
     height: auto;
     background: none;

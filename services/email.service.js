@@ -1,41 +1,41 @@
 const nodemailer = require('nodemailer');
 
 module.exports.sendEmail = function sendEmail(emailData) {
-    // Generate test SMTP service account from ethereal.email
-    // Only needed if you don't have a real mail account for testing
-    nodemailer.createTestAccount((err, account) => {
 
-        // create reusable transporter object using the default SMTP transport
-        let transporter = nodemailer.createTransport({
-            host: 'smtp.ethereal.email',
-            port: 587,
-            secure: false, // true for 465, false for other ports
-            auth: {
-                user: account.user, // generated ethereal user
-                pass: account.pass  // generated ethereal password
-            }
-        });
+    let transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true, // true for 465, false for other ports
+        auth: {
+            user: 'westsoundlviv@gmail.com', // generated ethereal user
+            pass: 'LvivWestSound'  // generated ethereal password
+        }
+    });
 
-        // setup email data with unicode symbols
-        let mailOptions = {
-            from: '"Fred Foo 👻" <foo@blurdybloop.com>', // sender address
-            to: 'andriystelmakh2@gmail.com', // list of receivers
-            subject: 'Hello ✔', // Subject line
-            text: 'Hello world?', // plain text body
-            html: '<b>Hello world?</b>' // html body
-        };
+    var currentdate = new Date(); 
+    var datetime = "Заявку відправлено: " 
+                + (currentdate.getDate()<10?'0':'') + currentdate.getDate()  + "."
+                + (currentdate.getMonth()+1)  + "." 
+                + currentdate.getFullYear() + "   "  
+                + currentdate.getHours() + ":"  
+                + (currentdate.getMinutes()<10?'0':'') + currentdate.getMinutes() + ":" 
+                + (currentdate.getSeconds()<10?'0':'') + currentdate.getSeconds();
 
-        // send mail with defined transport object
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                return console.log(error);
-            }
-            console.log('Message sent: %s', info.messageId);
-            // Preview only available when sending through an Ethereal account
-            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: 'westsoundlviv@gmail.com', // sender address
+        to: 'sergiy.buten8@gmail.com', // list of receivers
+        subject: 'У вас нова заявка з сайту', // Subject line
+        text: 'Hello world?', // plain text body
+        html: 
+        '<head><style>td{ border: 1px solid black; padding: 5px; color: #000;}th{border: 1px solid black; color: #000; background: #b8b6ec;}</style></head><body style="font-weight: 600; line-height: 1.5"><b>' + datetime + '</b><br/><table style="border-spacing: 0px; min-width: 100%; border: 1px solid black"><thead style="border-bottom: 1px solid black; padding: 5px"><tr><th>Імя</th><th>Email</th><th>Телефон</th><th>Повідомлення</th></tr></thead><tbody><tr><td>' + emailData.name + '</td><td>' + emailData.email + '</td><td>' + emailData.phoneNumber + '</td><td>' + emailData.message + '</td></tr></tbody></table></body>'    
+        // html body
+    };
 
-            // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@blurdybloop.com>
-            // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-        });
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
     });
 }
