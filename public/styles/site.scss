@@ -340,8 +340,16 @@
     }
 }
 
-//--------------- global styles for buttons on focus ----------------
+//--------------- global styles for elements on focus ----------------
 button:focus {
     outline: none !important;
     box-shadow: none !important;
 }
+
+//---------------- carousel styles ----------------------------------
+
+.carousel-item.active{
+    border: none !important;
+}
+
+

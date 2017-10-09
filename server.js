@@ -27,7 +27,7 @@ app.get('/gallery', function (req, res) {
 app.get('/services', function (req, res) {
     res.render('services');
 });
-app.get('/zvuk', function (req, res) {
+app.get('/zvuk.html', function (req, res) {
     res.render('sound');
 });
 app.get('/light', function (req, res) {

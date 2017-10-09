@@ -15,8 +15,14 @@ $("#btnsend").on('click', () => {
         type: 'POST',
         url: 'http://localhost:8081/mail',
         data: JSON.stringify(mail),
-        success: function(data) { alert("HUJ"); },
+        success: function(data) { 
+            console.log('success');
+         },
         contentType: "application/json",
         dataType: 'json'
     });
 });
+
+// $("#contact-form").submit(function(e) {
+//     e.preventDefault();
+// });

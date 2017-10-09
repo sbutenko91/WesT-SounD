@@ -23,7 +23,7 @@ function navigateToServices() {
 }
 
 function navigateToSound() {
-    window.location.href = '/zvuk'
+    window.location.href = '/zvuk.html'
 }
 
 function navigateToSoundRider() {

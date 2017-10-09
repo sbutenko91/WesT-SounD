@@ -137,6 +137,10 @@
   background: #202427 !important;
 }
 
+.nav-link:focus{
+  outline: none !important;
+}
+
 // ---------- header style for mobile view ------------
 @media(max-width: 991px) {
   .nav-item:nth-child(2){
