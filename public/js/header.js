@@ -53,6 +53,7 @@ $(document).ready(function(){
         var id  = $(this).attr('href'),
             top = $(id).offset().top-98;
         $('body,html').animate({scrollTop: top}, 800);
+        toastr.success("Message sent", "SUCCESS")
     });
 });
 
