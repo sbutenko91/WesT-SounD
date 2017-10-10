@@ -74,7 +74,7 @@ app.get('/78.html', function (req, res) {
 });
 app.post('/mail', function (req, res) {
     mailService.sendEmail(req.body);
-    res.sendStatus(200);
+    res.status(200).send('OK');
 });
 
 app.use(compileSass({

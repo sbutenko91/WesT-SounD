@@ -14,15 +14,20 @@ $("#btnsend").on('click', () => {
     $.ajax({
         type: 'POST',
         url: 'http://localhost:8081/mail',
+        contentType: "application/json",        
         data: JSON.stringify(mail),
-        success: function(data) { 
-            console.log('success');
-         },
-        contentType: "application/json",
-        dataType: 'json'
+        success: function () {
+            alert('success');
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert("Error, status = " + textStatus + ", " +
+                "error thrown: " + errorThrown
+            );
+        },
+        dataType: 'text'
     });
 });
 
-// $("#contact-form").submit(function(e) {
-//     e.preventDefault();
-// });
+$("#contact-form").submit(function (e) {
+    e.preventDefault();
+});
