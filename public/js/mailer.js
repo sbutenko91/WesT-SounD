@@ -1,5 +1,4 @@
-
-$("#btnsend").on('click', () => {
+$("#contact-form").submit(() => {
     var name = $("#name").val();
     var email = $("#email").val();
     var phoneNumber = $("#phoneNumber").val();
@@ -14,13 +13,15 @@ $("#btnsend").on('click', () => {
     $.ajax({
         type: 'POST',
         url: 'http://localhost:8081/mail',
-        contentType: "application/json",        
+        contentType: "application/json",
         data: JSON.stringify(mail),
         success: function () {
-            alert('success');
+            toastr.info("Ваше повідомлення успішно надіслано");
+            $("input, textarea").val("");
         },
         error: function (jqXHR, textStatus, errorThrown) {
-            alert("Error, status = " + textStatus + ", " +
+            toastr.error("Спробуйте пізніше", "Помилка")
+            console.log("Error, status = " + textStatus + ", " +
                 "error thrown: " + errorThrown
             );
         },
