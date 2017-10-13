@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {},
+  "scripts": {
+    "build-css": "node-sass scss/ -o public/styles/",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

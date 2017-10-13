@@ -39,8 +39,8 @@ app.get('/sound', function (req, res) {
 app.get('/svitlo.html', function (req, res) {
     res.render('light');
 });
-app.get('/scene', function (req, res) {
-    res.render('scene');
+app.get('/services/scene', function (req, res) {
+    res.render('./services/scene');
 });
 app.get('/51.html', function (req, res) {
     res.render('stageRent');
@@ -77,18 +77,9 @@ app.post('/mail', function (req, res) {
     res.status(200).send('OK');
 });
 
-app.use(compileSass({
-    root: root + '/public',
-    sourceMap: true, // Includes Base64 encoded source maps in output css 
-    sourceComments: true, // Includes source comments in output css 
-    watchFiles: true, // Watches sass files and updates mtime on main files for each change 
-    logToConsole: false // If true, will log to console.error on errors 
-}));
-
-app.use(express.static('public'));
-
-
+app.set('views', __dirname + '/views');
 app.set("view engine", "jade");
+app.use(express.static('public'));
 
 var server = app.listen(8081, function () {
     console.log("Example app listening at http://localhost:8081/")

@@ -1,0 +1,291 @@
+.wrapper-page {
+  background-image: url("../images/service-section.png");
+  background-size: cover;
+  background-position: bottom;
+  height: auto;
+  padding-bottom: 2rem; }
+  .wrapper-page .title {
+    margin-bottom: 1.5rem;
+    font-size: 45px;
+    font-family: 'SourceSansPro-Bold';
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: #fff; }
+    @media (max-width: 600px) {
+      .wrapper-page .title {
+        font-size: 24px !important;
+        letter-spacing: 6px;
+        line-height: 1.5; }
+        .wrapper-page .title span {
+          font-size: 20px !important;
+          display: block;
+          margin-top: 0.5rem;
+          line-height: 20px; } }
+  .wrapper-page .head {
+    color: #fff !important;
+    font-family: 'SourceSansPro-Regular';
+    font-size: 1.5rem; }
+    .wrapper-page .head:hover {
+      color: #fff; }
+  .wrapper-page .link {
+    color: #4267b2 !important;
+    text-decoration: underline;
+    font-family: 'SourceSansPro-Regular'; }
+    .wrapper-page .link:hover {
+      color: #4267b2;
+      text-decoration: none; }
+  .wrapper-page #carouselExampleControls {
+    position: initial;
+    float: none;
+    width: 600px;
+    height: 400px; }
+  .wrapper-page .heading {
+    color: violet;
+    font-size: 1.25rem;
+    font-family: 'SourceSansPro-Semibold';
+    margin-top: 1rem; }
+  .wrapper-page .block {
+    padding-bottom: 1.5rem; }
+    .wrapper-page .block hr {
+      color: #fff;
+      background-color: #fff;
+      opacity: 0.1;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    .wrapper-page .block .description {
+      text-align: left; }
+
+.wrapper-page-discoEquipment .slide,
+.wrapper-page-concertEquipment .slide,
+.wrapper-page-laser .slide,
+.wrapper-page-light .slide {
+  max-width: 100% !important;
+  width: 530px !important;
+  height: auto !important;
+  margin: 2rem auto;
+  display: block;
+  padding: 0; }
+  .wrapper-page-discoEquipment .slide img,
+  .wrapper-page-concertEquipment .slide img,
+  .wrapper-page-laser .slide img,
+  .wrapper-page-light .slide img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%; }
+
+.wrapper-page-services a {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+
+.wrapper-page-discoEquipment .slide {
+  width: 300px !important;
+  height: 24rem !important;
+  margin-bottom: 0 !important; }
+
+.wrapper-page-scene h3 {
+  width: 100%;
+  margin-bottom: 0; }
+  .wrapper-page-scene h3 .link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem; }
+    .wrapper-page-scene h3 .link:hover {
+      color: #fff;
+      text-decoration: none;
+      background: rgba(23, 25, 37, 0.4);
+      border-bottom: none;
+      border-radius: 2rem; }
+
+.wrapper-page-stageRent span {
+  color: violet; }
+
+.gallery-page {
+  background: #fff; }
+  .gallery-page .title {
+    color: #424a57 !important; }
+  .gallery-page .container-fluid,
+  .gallery-page .row-fluid,
+  .gallery-page .section-gallery,
+  .gallery-page .wrapper-gallery {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .gallery-page .wrapper-gallery {
+    margin: 0; }
+  .gallery-page .img-fluid {
+    cursor: pointer !important; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 164px; }
+  .wrapper .row-fluid {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .wrapper .row-fluid .title {
+      color: #fff; }
+    .wrapper .row-fluid span {
+      color: violet;
+      font-size: 1.5rem; }
+  .wrapper .text-default {
+    font-size: 1rem;
+    color: #8a9394; }
+  .wrapper .row {
+    padding: 15px; }
+    .wrapper .row h2 {
+      margin: 1rem 0;
+      width: 100%;
+      text-align: left;
+      font-size: 1.5rem;
+      color: #fff;
+      font-family: 'SourceSansPro-Semibold'; }
+      @media (max-width: 770px) {
+        .wrapper .row h2 {
+          text-align: center;
+          margin-top: 0; } }
+      @media (max-width: 575px) {
+        .wrapper .row h2 {
+          margin-top: 1rem; } }
+    .wrapper .row .img-fluid {
+      display: block;
+      margin: 0 auto;
+      cursor: default; }
+    .wrapper .row p {
+      color: #8a9394;
+      font-family: 'SourceSansPro-Regular';
+      width: 100%;
+      text-align: justify; }
+      @media (max-width: 770px) {
+        .wrapper .row p {
+          line-height: 1.2; } }
+    .wrapper .row .heading {
+      color: #fff;
+      font-size: 1.25rem;
+      font-family: 'SourceSansPro-Semibold';
+      margin-top: 1rem; }
+    .wrapper .row .rider {
+      display: block;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(to right, #5e56da 0%, #f26da7 100%);
+      opacity: 0.8;
+      margin: 20px auto;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 25px;
+      font-family: 'SourceSansPro-Semibold';
+      border: none;
+      padding: 0;
+      line-height: 50px;
+      margin-top: 2rem; }
+      .wrapper .row .rider:hover {
+        opacity: 1;
+        cursor: pointer;
+        font-size: 1.125rem; }
+
+.wrapper-page-podiumRent .text-default,
+.wrapper-page-stageConstruction .text-default,
+.wrapper-page-turnstile .text-default {
+  margin-top: 1rem;
+  text-indent: 1.5rem; }
+
+.wrapper-page-screenConstruction .popup .img-fluid,
+.wrapper-page-stageConstruction .popup .img-fluid,
+.wrapper-page-turnstile .popup .img-fluid {
+  cursor: pointer !important; }
+
+.wrapper-page-screenConstruction .showPopup,
+.wrapper-page-stageConstruction .showPopup,
+.wrapper-page-turnstile .showPopup {
+  z-index: 999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .wrapper-page-screenConstruction .showPopup .overlay,
+  .wrapper-page-stageConstruction .showPopup .overlay,
+  .wrapper-page-turnstile .showPopup .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); }
+  .wrapper-page-screenConstruction .showPopup .img-show,
+  .wrapper-page-stageConstruction .showPopup .img-show,
+  .wrapper-page-turnstile .showPopup .img-show {
+    width: 700px;
+    height: auto;
+    max-width: 90%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 0.5rem; }
+    .wrapper-page-screenConstruction .showPopup .img-show img,
+    .wrapper-page-stageConstruction .showPopup .img-show img,
+    .wrapper-page-turnstile .showPopup .img-show img {
+      width: 100%;
+      height: 100%; }
+  .wrapper-page-screenConstruction .showPopup span,
+  .wrapper-page-stageConstruction .showPopup span,
+  .wrapper-page-turnstile .showPopup span {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer; }
+    .wrapper-page-screenConstruction .showPopup span .close-icon,
+    .wrapper-page-stageConstruction .showPopup span .close-icon,
+    .wrapper-page-turnstile .showPopup span .close-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      background: url("../images/close-icon.png"); }
+
+.table-striped {
+  margin-top: 1rem; }
+  .table-striped thead th {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'SourceSansPro-Bold';
+    text-transform: uppercase;
+    background: #4267b2; }
+  .table-striped thead th {
+    vertical-align: middle !important; }
+  .table-striped thead th:last-child {
+    width: 80px; }
+  .table-striped tbody tr {
+    color: #fff !important;
+    font-family: 'SourceSansPro-Regular'; }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background: #2d2a31 !important; }
+  .table-striped tbody td {
+    vertical-align: middle; }
+  .table-striped tbody td:last-child {
+    width: 80px; }
+
+.image {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .image .img-fluid {
+    border-radius: 0.5rem; }
+
+.btn-default {
+  border-top-left-radius: 2rem !important;
+  border-bottom-left-radius: 2rem !important;
+  font-family: 'SourceSansPro-Regular';
+  cursor: pointer; }
+  .btn-default:focus {
+    box-shadow: 0 0 0 0px rgba(2, 117, 216, 0.25) !important;
+    outline: none !important; }
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+.carousel-item.active {
+  border: none !important; }

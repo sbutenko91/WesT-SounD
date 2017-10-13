@@ -38,7 +38,7 @@ function navigateToLight() {
 }
 
 function navigateToScene() {
-    window.location.href = '/scene'
+    window.location.href = '/services/scene'
 }
 
 function navigateToStageRent() {
