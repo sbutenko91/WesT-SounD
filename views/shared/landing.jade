@@ -1,0 +1,18 @@
+extends ./layout
+
+block head
+  link(href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet")
+  script(src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js")
+  script(src="/js/headerLanding.js")
+
+block import
+  include headerLanding
+
+block scripts
+  script(src="/js/instafeed.min.js")
+  script(src="/js/magnific.min.js")
+  script(src="/js/instaLanding.js")
+  script(src="/js/mailer.js")
+  script(src="/js/maskedinput.js")
+
+    

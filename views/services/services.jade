@@ -1,4 +1,4 @@
-extends ./layout2
+extends ../shared/site
 
 block vars
   - var keywords = 'сцена звук світло, оренда сцени, монтаж сцени, забезпечення світловими ефектами, встановлення звуку, подіуми різних розмірів, подіуми, сцени різних розмірів, оренда світла, ореда звуку, озвучення, освітлення, побудова сцени, технічне забезпечення концертних заходів, технічне забезпечення концертів, технічне забезпечення масових заходів.'
@@ -14,15 +14,15 @@ block content
                 p.text-center.head Пропонуємо різноманітні види послуг: як монтаж сцени, оренда сцени, оренда звуку та світлового обладнання, забезпечення світловими ефектами, встановлення якісною звуку, та різного роду обладнання.
             .row.wrapper-services
                 a.col-xs-12.col-sm-6.col-lg-3(onclick="navigateToSound()")
-                    img.img-circle(src="images/sound.png", alt="Звук")
+                    img.img-circle(src="/images/sound.png", alt="Звук")
                     .item звук
                 a.col-xs-12.col-sm-6.col-lg-3(onclick="navigateToLight()")
-                    img.img-circle(src="images/light.png", alt="Світло")
+                    img.img-circle(src="/images/light.png", alt="Світло")
                     .item світло
                 a.col-xs-12.col-sm-6.col-lg-3(onclick="navigateToScene()")
-                    img.img-circle(src="images/scene.png", alt="Сцена")
+                    img.img-circle(src="/images/scene.png", alt="Сцена")
                     .item сцена
                 a.col-xs-12.col-sm-6.col-lg-3(onclick="navigateToLed()")
-                    img.img-circle(src="images/screen.png", alt="Екрани")
+                    img.img-circle(src="/images/screen.png", alt="Екрани")
                     .item екрани
                 

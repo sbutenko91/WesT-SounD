@@ -1,4 +1,4 @@
-extends ./layout
+extends ./shared/landing
 
 block vars
   - var keywords = 'сцена звук світло, оренда сцени, монтаж сцени, забезпечення світловими ефектами, встановлення звуку, подіуми різних розмірів, подіуми, сцени різних розмірів, оренда світла, ореда звуку, озвучення, освітлення, побудова сцени, технічне забезпечення концертних заходів, технічне забезпечення концертів, технічне забезпечення масових заходів.'
@@ -155,7 +155,7 @@ block content
             - for (var i = 1; i < 25; i++)
               .col-4.col-md-2.item
                 .client-block
-                  img.img-fluid(src="images/" + i + ".jpg")
+                  img.img-fluid(src="/images/" + i + ".jpg")
     section.cmp-contact
       .section-contact.container#contact
         .contact-content

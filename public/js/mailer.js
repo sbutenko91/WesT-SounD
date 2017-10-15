@@ -18,6 +18,7 @@ $("#contact-form").submit(() => {
         success: function () {
             toastr.info("Ваше повідомлення успішно надіслано");
             $("input, textarea").val("");
+            $("form").attr("novalidate",true);
         },
         error: function (jqXHR, textStatus, errorThrown) {
             toastr.error("Спробуйте пізніше", "Помилка")

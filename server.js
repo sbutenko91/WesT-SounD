@@ -25,52 +25,52 @@ app.get('/gallery', function (req, res) {
     res.render('gallery');
 });
 app.get('/services', function (req, res) {
-    res.render('services');
+    res.render('./services/services');
 });
 app.get('/zvuk.html', function (req, res) {
-    res.render('sound');
+    res.render('./services/sound');
 });
-app.get('/light', function (req, res) {
-    res.render('riderLight');
+app.get('/services/light', function (req, res) {
+    res.render('./services/riderLight');
 });
-app.get('/sound', function (req, res) {
-    res.render('riderSound');
+app.get('/services/sound', function (req, res) {
+    res.render('./services/riderSound');
 });
 app.get('/svitlo.html', function (req, res) {
-    res.render('light');
+    res.render('./services/light');
 });
 app.get('/services/scene', function (req, res) {
     res.render('./services/scene');
 });
-app.get('/51.html', function (req, res) {
-    res.render('stageRent');
+app.get('/services/scene/51.html', function (req, res) {
+    res.render('./services/scene/stageRent');
 });
-app.get('/52.html', function (req, res) {
-    res.render('podium');
+app.get('/services/scene/52.html', function (req, res) {
+    res.render('./services/scene/podium');
 });
-app.get('/53.html', function (req, res) {
-    res.render('screens');
+app.get('/services/scene/53.html', function (req, res) {
+    res.render('./services/scene/screens');
 });
-app.get('/54.html', function (req, res) {
-    res.render('stageConstruction');
+app.get('/services/scene/54.html', function (req, res) {
+    res.render('./services/scene/stageConstruction');
 });
-app.get('/55.html', function (req, res) {
-    res.render('turnstile');
+app.get('/services/scene/55.html', function (req, res) {
+    res.render('./services/scene/turnstile');
 });
-app.get('/svitlodiodni_ekrany', function (req, res) {
-    res.render('led');
+app.get('/gallery/svitlodiodni_ekrany', function (req, res) {
+    res.render('./services/scene/led');
 });
-app.get('/60.html', function (req, res) {
-    res.render('acoustic');
+app.get('/services/sound/60.html', function (req, res) {
+    res.render('./services/sound/acoustic');
 });
-app.get('/76.html', function (req, res) {
-    res.render('disco');
+app.get('/services/light/76.html', function (req, res) {
+    res.render('./services/light/disco');
 });
-app.get('/77.html', function (req, res) {
-    res.render('concertEquipment');
+app.get('/services/light/77.html', function (req, res) {
+    res.render('./services/light/concertEquipment');
 });
-app.get('/78.html', function (req, res) {
-    res.render('laser');
+app.get('/services/light/78.html', function (req, res) {
+    res.render('./services/light/laser');
 });
 app.post('/mail', function (req, res) {
     mailService.sendEmail(req.body);
